@@ -1,4 +1,3 @@
-package main.java;
 public class RewardValue {
     private double cashValue;
     private double milesValue;
@@ -7,7 +6,7 @@ public class RewardValue {
         this.cashValue = cashValue;
         this.milesValue = convertCashToMiles(cashValue);
     }
-    public RewardValue(double milesValue) {
+    public RewardValue(int milesValue) {
         this.milesValue = milesValue;
         this.cashValue = convertMilesToCash(milesValue);
     }
@@ -24,4 +23,3 @@ public class RewardValue {
         return milesValue * MILES_TO_CASH_CONVERSION_RATE;
     }
 }
-
